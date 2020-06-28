@@ -1,0 +1,9 @@
+
+
+syntax: glob
+
+.idea
+*.swp
+.hg
+*.civ5suo
+

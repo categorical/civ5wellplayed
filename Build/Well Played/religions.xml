@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 11/26/2017 4:39:28 PM -->
+<GameData>
+	<Belief_YieldChangeTradeRoute>
+		<Update>
+			<Set>
+				<Yield>3</Yield>
+			</Set>
+			<Where>
+				<BeliefType>BELIEF_MESSENGER_GODS</BeliefType>
+				<YieldType>YIELD_SCIENCE</YieldType>
+			</Where>
+		</Update>
+	</Belief_YieldChangeTradeRoute>
+
+</GameData>

@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# ModBuddy Solution File, Format Version 11.00
+Project("{F5FC21B5-7CC2-458A-ABBA-992F515BBA20}") = "wellplayed", "wellplayed\wellplayed.civ5proj", "{C07BE1DA-B7F0-4541-835C-ECC59EC5E0FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|x86 = Default|x86
+		Deploy Only|x86 = Deploy Only|x86
+		Package Only|x86 = Package Only|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C07BE1DA-B7F0-4541-835C-ECC59EC5E0FD}.Default|x86.ActiveCfg = Default|x86
+		{C07BE1DA-B7F0-4541-835C-ECC59EC5E0FD}.Default|x86.Build.0 = Default|x86
+		{C07BE1DA-B7F0-4541-835C-ECC59EC5E0FD}.Deploy Only|x86.ActiveCfg = Deploy Only|x86
+		{C07BE1DA-B7F0-4541-835C-ECC59EC5E0FD}.Deploy Only|x86.Build.0 = Deploy Only|x86
+		{C07BE1DA-B7F0-4541-835C-ECC59EC5E0FD}.Package Only|x86.ActiveCfg = Package Only|x86
+		{C07BE1DA-B7F0-4541-835C-ECC59EC5E0FD}.Package Only|x86.Build.0 = Package Only|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

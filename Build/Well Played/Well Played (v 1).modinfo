@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="54af8dd4-5c43-4372-9700-7827a61483b4" version="1">
+  <Properties>
+    <Name>Well Played</Name>
+    <Stability>Alpha</Stability>
+    <Teaser>[COLOR_GREEN]Well played.[ENDCOLOR]</Teaser>
+    <Description>[COLOR_GREEN]Well played.[ENDCOLOR]</Description>
+    <Authors>dawei</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>0</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="0267BB7E1979ACFED7572593324F258F" import="0">buildings.xml</File>
+    <File md5="8FB66F5CC14503F7606AB3E5191BF16D" import="0">defines.xml</File>
+    <File md5="2193344B49747C48E0B6D3516E14828E" import="0">Earth_Huge_True.Civ5Map</File>
+    <File md5="8775019DDB4BE917A8FA2CAF2EC15578" import="0">gameinfo.xml</File>
+    <File md5="B8F3DDBA56038655FE74DD78887B6DEB" import="0">lang.xml</File>
+    <File md5="AECFF8C93B5BB0663DA7076BABBC03D5" import="0">religions.xml</File>
+    <File md5="990A4366888106C317F95DD970DA155B" import="0">startbonus.lua</File>
+    <File md5="58FD9F55BBC3BC9285C6D719E4B60AC9" import="0">terrain.xml</File>
+    <File md5="9D2A447AD2B81F66073FBCF566B29B6F" import="0">traits.xml</File>
+    <File md5="CFC4A6C4EB32B53A788BED421BD3A8BF" import="0">translations.xml</File>
+    <File md5="234A9985BA02A7A41C934691A344369A" import="1">UnitPanel.lua</File>
+    <File md5="BB6FA05924A8E7501A7E7AA4C629E684" import="0">units.xml</File>
+    <File md5="D5556BE2A2F5926170A9C63CE57EF0F4" import="0">wondernoti.lua</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>buildings.xml</UpdateDatabase>
+      <UpdateDatabase>defines.xml</UpdateDatabase>
+      <UpdateDatabase>translations.xml</UpdateDatabase>
+      <UpdateDatabase>gameinfo.xml</UpdateDatabase>
+      <UpdateDatabase>terrain.xml</UpdateDatabase>
+      <UpdateDatabase>traits.xml</UpdateDatabase>
+      <UpdateDatabase>units.xml</UpdateDatabase>
+      <UpdateDatabase>religions.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="wondernoti.lua">
+      <Name>wondernoti</Name>
+      <Description>wondernoti</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="startbonus.lua">
+      <Name>startbonus</Name>
+      <Description>startbonus</Description>
+    </EntryPoint>
+    <EntryPoint type="Map" file="Earth_Huge_True.Civ5Map">
+      <Name>Earth True</Name>
+      <Description>A map that spans the entire planet.</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

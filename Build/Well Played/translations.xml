@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GameData>
+	<Language_en_US>
+		<Update>
+			<Set>
+				<Text>The Great General combat bonus is increased by 45%.</Text>
+			</Set>
+			<Where>
+				<Tag>TXT_KEY_TRAIT_ART_OF_WAR</Tag>
+			</Where>
+		</Update>
+		<Update>
+			<Set>
+				<Text>+3 [ICON_RESEARCH] Science for every 2 [ICON_CITIZEN] Citizens in this City. +3[ICON_GOLD] Gold.</Text>
+			</Set>
+			<Where>
+				<Tag>TXT_KEY_BUILDING_PAPER_MAKER_HELP</Tag>
+			</Where>
+		</Update>
+		<Update>
+			<Set>
+				<Text>Cannot found a City within 2 Tiles of another City.</Text>
+			</Set>
+			<Where>
+				<Tag>TXT_KEY_MISSION_BUILD_CITY_DISABLED_HELP</Tag>
+			</Where>
+		</Update>
+		<Update>
+			<Set>
+				<Text>+3 [ICON_RESEARCH] Science in cities with a [ICON_CONNECTED] City Connection</Text>
+			</Set>
+			<Where>
+				<Tag>TXT_KEY_BELIEF_MESSENGER_GODS</Tag>
+			</Where>
+		</Update>
+		<Update>
+			<Set>
+				<Text>Ahuitzotl</Text>
+			</Set>
+			<Where>
+				<Tag>TXT_KEY_GREAT_PERSON_AUITZOTL</Tag>
+			</Where>
+		</Update>
+		<Row>
+			<Tag>TXT_KEY_PROMOTION_GREATER_RANGE</Tag>
+			<Text>Greater Range</Text>
+		</Row>
+		<Row>
+			<Tag>TXT_KEY_PROMOTION_GREATER_RANGE_HELP</Tag>
+			<Text>+1 Range.</Text>
+		</Row>
+
+	</Language_en_US>
+
+</GameData>
