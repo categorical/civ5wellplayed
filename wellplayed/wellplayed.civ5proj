@@ -5,7 +5,7 @@
     <ProjectGuid>{c07be1da-b7f0-4541-835c-ecc59ec5e0fd}</ProjectGuid>
     <Name>Well Played</Name>
     <Guid>54af8dd4-5c43-4372-9700-7827a61483b4</Guid>
-    <ModVersion>1</ModVersion>
+    <ModVersion>2</ModVersion>
     <Stability>Alpha</Stability>
     <Teaser>[COLOR_GREEN]Well played.[ENDCOLOR]</Teaser>
     <Description>[COLOR_GREEN]Well played.[ENDCOLOR]</Description>
@@ -82,6 +82,11 @@
         <Type>UpdateDatabase</Type>
         <FileName>religions.xml</FileName>
       </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>citynames.xml</FileName>
+      </Action>
     </ModActions>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
@@ -97,6 +102,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="buildings.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="citynames.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>

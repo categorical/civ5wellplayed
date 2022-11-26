@@ -4,6 +4,11 @@
     <Languages>
         <Update>
             <Set>
+				<!--
+				default FontWidthScale is 0.4
+				default FontName is "MS PGothic"
+				see Civ5LocalizationDatabaseSchema.sql
+				-->
                 <!--Uses English as game language and supports keying in traditional Chinese characters.-->
                 <!--Does not work if loaded as mod.-->
                 <!--The following 4 lines need to be appended to English.xml before game starts.-->

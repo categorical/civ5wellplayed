@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GameData>
+
+	<!-- to display cjk, set UseExtendedFont to 1 in English.xml-->
+	<Language_en_US>
+<Update><Set><Text></Text></Set><Where><Tag>TXT_KEY_CITY_NAME_BEIJING</Tag></Where></Update>
+<Update><Set><Text>長安</Text></Set><Where><Tag>TXT_KEY_CITY_NAME_SHANGHAI</Tag></Where></Update>
+<Update><Set><Text>狗奴國</Text></Set><Where><Tag>TXT_KEY_CITY_NAME_GUANGZHOU</Tag></Where></Update>
+<Update><Set><Text>玄菟</Text></Set><Where><Tag>TXT_KEY_CITY_NAME_NANJING</Tag></Where></Update>
+<Update><Set><Text>九真</Text></Set><Where><Tag>TXT_KEY_CITY_NAME_XIAN</Tag></Where></Update>
+<Update><Set><Text>吳</Text></Set><Where><Tag>TXT_KEY_CITY_NAME_CHENGDU</Tag></Where></Update>
+<Update><Set><Text>蒼梧</Text></Set><Where><Tag>TXT_KEY_CITY_NAME_HANGZHOU</Tag></Where></Update>
+<Update><Set><Text>牂牁</Text></Set><Where><Tag>TXT_KEY_CITY_NAME_TIANJIN</Tag></Where></Update>
+<Update><Set><Text>邪馬臺國</Text></Set><Where><Tag>TXT_KEY_CITY_NAME_MACAU</Tag></Where></Update>
+<Update><Set><Text>琅琊</Text></Set><Where><Tag>TXT_KEY_CITY_NAME_SHANDONG</Tag></Where></Update>
+<Update><Set><Text>康居</Text></Set><Where><Tag>TXT_KEY_CITY_NAME_KAIFENG</Tag></Where></Update>
+
+<Update><Set><Text>句章</Text></Set><Where><Tag>TXT_KEY_CITY_NAME_NINGBO</Tag></Where></Update>
+<Update><Set><Text>鄴</Text></Set><Where><Tag>TXT_KEY_CITY_NAME_BAODING</Tag></Where></Update>
+<Update><Set><Text>樂浪</Text></Set><Where><Tag>TXT_KEY_CITY_NAME_YANGZHOU</Tag></Where></Update>
+<Update><Set><Text>弓月城</Text></Set><Where><Tag>TXT_KEY_CITY_NAME_HAERBIN</Tag></Where></Update>
+<Update><Set><Text>哀牢</Text></Set><Where><Tag>TXT_KEY_CITY_NAME_CHONGQING</Tag></Where></Update>
+<Update><Set><Text>洛陽</Text></Set><Where><Tag>TXT_KEY_CITY_NAME_LOYANG</Tag></Where></Update>
+<Update><Set><Text>靈州</Text></Set><Where><Tag>TXT_KEY_CITY_NAME_KUNMING</Tag></Where></Update>
+<Update><Set><Text>廣陵</Text></Set><Where><Tag>TXT_KEY_CITY_NAME_TAIPEI</Tag></Where></Update>
+<Update><Set><Text>襄平</Text></Set><Where><Tag>TXT_KEY_CITY_NAME_SHENYANG</Tag></Where></Update>
+<Update><Set><Text>晉陽</Text></Set><Where><Tag>TXT_KEY_CITY_NAME_TAIYUAN</Tag></Where></Update>
+
+<Update><Set><Text>姐奴</Text></Set><Where><Tag>TXT_KEY_CITY_NAME_TAINAN</Tag></Where></Update>
+<Update><Set><Text>對海</Text></Set><Where><Tag>TXT_KEY_CITY_NAME_DALIAN</Tag></Where></Update>
+<Update><Set><Text>交趾</Text></Set><Where><Tag>TXT_KEY_CITY_NAME_LIJIANG</Tag></Where></Update>
+<Update><Set><Text>鉤町</Text></Set><Where><Tag>TXT_KEY_CITY_NAME_WUXI</Tag></Where></Update>
+<Update><Set><Text>莎車</Text></Set><Where><Tag>TXT_KEY_CITY_NAME_SUZHOU</Tag></Where></Update>
+<Update><Set><Text>石國</Text></Set><Where><Tag>TXT_KEY_CITY_NAME_MAOMING</Tag></Where></Update>
+<Update><Set><Text>陳留</Text></Set><Where><Tag>TXT_KEY_CITY_NAME_SHAOGUAN</Tag></Where></Update>
+<Update><Set><Text>碎葉城</Text></Set><Where><Tag>TXT_KEY_CITY_NAME_YANGJIANG</Tag></Where></Update>
+<Update><Set><Text>建業</Text></Set><Where><Tag>TXT_KEY_CITY_NAME_HEYUAN</Tag></Where></Update>
+<Update><Set><Text>會稽</Text></Set><Where><Tag>TXT_KEY_CITY_NAME_LIAONING</Tag></Where></Update>
+
+<Update><Set><Text></Text></Set><Where><Tag>TXT_KEY_CITY_NAME_HUBEI</Tag></Where></Update>
+<Update><Set><Text></Text></Set><Where><Tag>TXT_KEY_CITY_NAME_GANSU</Tag></Where></Update>
+<Update><Set><Text></Text></Set><Where><Tag>TXT_KEY_CITY_NAME_HUANGSHI</Tag></Where></Update>
+<Update><Set><Text></Text></Set><Where><Tag>TXT_KEY_CITY_NAME_YICHANG</Tag></Where></Update>
+<Update><Set><Text></Text></Set><Where><Tag>TXT_KEY_CITY_NAME_YINGTAN</Tag></Where></Update>
+<Update><Set><Text></Text></Set><Where><Tag>TXT_KEY_CITY_NAME_XINYU</Tag></Where></Update>
+<Update><Set><Text></Text></Set><Where><Tag>TXT_KEY_CITY_NAME_XINZHENG</Tag></Where></Update>
+<Update><Set><Text></Text></Set><Where><Tag>TXT_KEY_CITY_NAME_HANDAN</Tag></Where></Update>
+<Update><Set><Text></Text></Set><Where><Tag>TXT_KEY_CITY_NAME_DUNHUANG</Tag></Where></Update>
+<Update><Set><Text></Text></Set><Where><Tag>TXT_KEY_CITY_NAME_GAOYU</Tag></Where></Update>
+<Update><Set><Text></Text></Set><Where><Tag>TXT_KEY_CITY_NAME_NANTONG</Tag></Where></Update>
+<Update><Set><Text></Text></Set><Where><Tag>TXT_KEY_CITY_NAME_WEIFANG</Tag></Where></Update>
+<Update><Set><Text></Text></Set><Where><Tag>TXT_KEY_CITY_NAME_XIKANG</Tag></Where></Update>
+	</Language_en_US>
+	<Civilization_CityNames>
+		<Delete>
+			<CivilizationType>CIVILIZATION_CHINA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_BEIJING</CityName>
+		</Delete>
+	</Civilization_CityNames>
+</GameData>
