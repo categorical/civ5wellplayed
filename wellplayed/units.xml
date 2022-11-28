@@ -1,61 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <GameData>
-	<Units>
-		<Update>
-			<Set>
-				<Combat>12</Combat>
-				<RangedCombat>17</RangedCombat>
-			</Set>
-			<Where>
-				<Type>UNIT_CHINESE_CHUKONU</Type>
-			</Where>
-		</Update>
-		<Update>
-			<Set>
-				<GoodyHutUpgradeUnitClass>UNITCLASS_WARRIOR</GoodyHutUpgradeUnitClass>
-			</Set>
-			<Where>
-				<Type>UNIT_SCOUT</Type>
-			</Where>
-		</Update>
-	</Units>
+    <Units>
+        <Update>
+            <Set>
+                <Combat>12</Combat>
+                <RangedCombat>17</RangedCombat>
+            </Set>
+            <Where>
+                <Type>UNIT_CHINESE_CHUKONU</Type>
+            </Where>
+        </Update>
+        <Update>
+            <Set>
+                <GoodyHutUpgradeUnitClass>UNITCLASS_WARRIOR</GoodyHutUpgradeUnitClass>
+            </Set>
+            <Where>
+                <Type>UNIT_SCOUT</Type>
+            </Where>
+        </Update>
+    </Units>
 
-	<Unit_ClassUpgrades>
-		<Row>
-			<UnitType>UNIT_SCOUT</UnitType>
-			<UnitClassType>UNITCLASS_ARCHER</UnitClassType>
-		</Row>
-		<Row>
-			<UnitType>UNIT_SHOSHONE_PATHFINDER</UnitType>
-			<UnitClassType>UNITCLASS_COMPOSITE_BOWMAN</UnitClassType>
-		</Row>
-	</Unit_ClassUpgrades>
+    <Unit_ClassUpgrades>
+        <Row>
+            <UnitType>UNIT_SCOUT</UnitType>
+            <UnitClassType>UNITCLASS_ARCHER</UnitClassType>
+        </Row>
+        <Row>
+            <UnitType>UNIT_SHOSHONE_PATHFINDER</UnitType>
+            <UnitClassType>UNITCLASS_COMPOSITE_BOWMAN</UnitClassType>
+        </Row>
+    </Unit_ClassUpgrades>
+    <UnitPromotions>
+        <Row>
+            <Type>PROMOTION_GREATER_RANGE</Type>
+            <Description>TXT_KEY_PROMOTION_GREATER_RANGE</Description>
+            <Help>TXT_KEY_PROMOTION_GREATER_RANGE_HELP</Help>
+            <Sound>AS2D_IF_LEVELUP</Sound>
+            <RangeChange>1</RangeChange>
+            <PortraitIndex>59</PortraitIndex>
+            <IconAtlas>ABILITY_ATLAS</IconAtlas>
+            <PediaType>PEDIA_ATTRIBUTES</PediaType>
+            <PediaEntry>TXT_KEY_PROMOTION_GREATER_RANGE</PediaEntry>
+        </Row>
+    </UnitPromotions>
+    <Unit_FreePromotions>
+        <Delete>
+            <UnitType>UNIT_ENGLISH_LONGBOWMAN</UnitType>
+            <PromotionType>PROMOTION_RANGE</PromotionType>
+        </Delete>
+        <Row>
+            <UnitType>UNIT_ENGLISH_LONGBOWMAN</UnitType>
+            <PromotionType>PROMOTION_GREATER_RANGE</PromotionType>
+        </Row>
+    </Unit_FreePromotions>
 
-	<UnitPromotions>
-		<Row>
-			<Type>PROMOTION_GREATER_RANGE</Type>
-			<Description>TXT_KEY_PROMOTION_GREATER_RANGE</Description>
-			<Help>TXT_KEY_PROMOTION_GREATER_RANGE_HELP</Help>
-			<Sound>AS2D_IF_LEVELUP</Sound>
-			<RangeChange>1</RangeChange>
-			<PortraitIndex>59</PortraitIndex>
-			<IconAtlas>ABILITY_ATLAS</IconAtlas>
-			<PediaType>PEDIA_ATTRIBUTES</PediaType>
-			<PediaEntry>TXT_KEY_PROMOTION_GREATER_RANGE</PediaEntry>
-		</Row>
-
-	</UnitPromotions>
-	<Unit_FreePromotions>
-		<Delete>
-			<UnitType>UNIT_ENGLISH_LONGBOWMAN</UnitType>
-			<PromotionType>PROMOTION_RANGE</PromotionType>
-		</Delete>
-		<Row>
-			<UnitType>UNIT_ENGLISH_LONGBOWMAN</UnitType>
-			<PromotionType>PROMOTION_GREATER_RANGE</PromotionType>
-		</Row>
-	</Unit_FreePromotions>
-
-	
+    <!--
+    Celts
+    uu: pictish overrides warrior instead of spearman
+        as result start warrior becomes pictish
+        pictish upgrade is swordsman and and goody upgrade is spearman
+    ua: no change
+        values for FaithFromUnimprovedForest are hard written in CvCity.cpp
+    ub: +1 happiness
+    -->
+    <Civilization_UnitClassOverrides>
+        <Update>
+            <Set><UnitClassType>UNITCLASS_WARRIOR</UnitClassType></Set>
+            <Where><UnitType>UNIT_CELT_PICTISH_WARRIOR</UnitType></Where>
+        </Update>
+    </Civilization_UnitClassOverrides>
+    <Units>
+        <Update>
+            <Set>
+            <!--new-->                                      <!--old-->
+            <Class>UNITCLASS_WARRIOR</Class>                <!--UNITCLASS_SPEARMAN-->
+            <PrereqTech>TECH_AGRICULTURE</PrereqTech>       <!--TECH_BRONZE_WORKING-->
+            <Combat>12</Combat>                             <!--11-->
+            <Cost>40</Cost>                                 <!--56-->
+            <FaithCost>80</FaithCost>                       <!--112-->
+            <ObsoleteTech>TECH_METAL_CASTING</ObsoleteTech> <!--TECH_CIVIL_SERVICE-->
+            <GoodyHutUpgradeUnitClass>UNITCLASS_SPEARMAN</GoodyHutUpgradeUnitClass> <!--UNITCLASS_PIKEMAN-->
+            <!--
+            these are most certainly legacy code not applicable to civ5
+            AdvancedStartCost	"Cost if starting midway through game"
+            Conscription		"Cost to conscript this unit"
+            -->
+            <AdvancedStartCost>10</AdvancedStartCost>       <!--15-->
+            <Conscription>1</Conscription>                  <!--2-->
+            </Set>
+            <Where><Type>UNIT_CELT_PICTISH_WARRIOR</Type></Where>
+        </Update>
+    </Units>
+    <Unit_ClassUpgrades>
+        <Update>
+            <Set><UnitClassType>UNITCLASS_SWORDSMAN</UnitClassType></Set>
+            <Where><UnitType>UNIT_CELT_PICTISH_WARRIOR</UnitType></Where>
+        </Update>
+    </Unit_ClassUpgrades>
+    <Buildings>
+        <Update>
+            <Set><Happiness>4</Happiness></Set>             <!--3-->
+            <Where><Type>BUILDING_CEILIDH_HALL</Type></Where>
+        </Update>
+    </Buildings>
 </GameData>
