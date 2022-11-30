@@ -39,6 +39,10 @@ print(g)
 EOF
     local content;content="$(tail -n+2 "$f"|"$p3" -c "$REPLY")"
     sed -i '1!d' "$f";echo "$content">>"$f"
+
+    f="$(cygpath -O)/My Games/Sid Meier's Civilization 5/config.ini"
+    sed -i 's/^\(DebugPanel =\).*$/\10/' "$f"   # 1 is on
+    sed -i 's/^\(EnableTuner =\).*$/\10/' "$f"  # lua
 }
 _install(){
     [ -d "$dest" ]||(set -x;mkdir "$dest")

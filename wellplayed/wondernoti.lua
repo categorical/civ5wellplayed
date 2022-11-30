@@ -59,3 +59,16 @@ end
 
 Events.SequenceGameInitComplete.Add(onsequencegameinitcomplete)
 GameEvents.PlayerDoTurn.Add(onplayerdoturn)
+
+function oncitycanconstruct(pid,cid,bid)
+    -- do not let ai build stonehenge
+    if pid~=hid and bid==GameInfo.Buildings["BUILDING_STONEHENGE"].ID then
+        return false
+    end
+    return "t"
+    -- $ GameInfo.Buildings[159]
+    -- > table: 7334D5B0
+    -- $ GameInfo.Buildings["BUILDING_STONEHENGE"]
+    -- > table: 7334D5B0
+end
+GameEvents.CityCanConstruct.Add(oncitycanconstruct)
