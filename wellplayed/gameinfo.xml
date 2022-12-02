@@ -99,5 +99,29 @@
 		</Update>
 	</Worlds>
 
-
+    <HandicapInfos>
+        <Update>
+            <Set>
+                <AIFreeXP>0</AIFreeXP>                                      <!--30-->
+                <AIFreeXPPercent>0</AIFreeXPPercent>                        <!--100-->
+                <AIUnhappinessPercent>100</AIUnhappinessPercent>            <!--75-->
+                <AIConstructPercent>100</AIConstructPercent>                <!--50-->
+                <AITrainPercent>50</AITrainPercent>                         <!--50-->
+                <AIBuildingCostPercent>100</AIBuildingCostPercent>          <!--50-->
+                <AIUnitCostPercent>100</AIUnitCostPercent>                  <!--50-->
+                <AIWorldConstructPercent>100</AIWorldConstructPercent>      <!--100-->
+            </Set>
+            <Where><Type>HANDICAP_DEITY</Type></Where>
+        </Update>
+        <Update>
+            <Set>
+                <NumCitiesUnhappinessMod>100</NumCitiesUnhappinessMod>      <!--90-->
+                <PopulationUnhappinessMod>100</PopulationUnhappinessMod>    <!--90-->
+                <RouteCostPercent>100</RouteCostPercent>                    <!--50-->
+                <PolicyPercent>100</PolicyPercent>                          <!--75-->
+                <ResearchPercent>100</ResearchPercent>                      <!--85-->
+            </Set>
+            <Where><Type>HANDICAP_AI_DEFAULT</Type></Where>
+        </Update>
+    </HandicapInfos>
 </GameData>
