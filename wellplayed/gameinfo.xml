@@ -115,6 +115,19 @@
         </Update>
         <Update>
             <Set>
+                <AIFreeXP>0</AIFreeXP>                                      <!--30-->
+                <AIFreeXPPercent>0</AIFreeXPPercent>                        <!--50-->
+                <AIUnhappinessPercent>100</AIUnhappinessPercent>            <!--85-->
+                <AIConstructPercent>100</AIConstructPercent>                <!--60-->
+                <AITrainPercent>65</AITrainPercent>                         <!--65-->
+                <AIBuildingCostPercent>100</AIBuildingCostPercent>          <!--65-->
+                <AIUnitCostPercent>100</AIUnitCostPercent>                  <!--65-->
+                <AIWorldConstructPercent>100</AIWorldConstructPercent>      <!--100-->
+            </Set>
+            <Where><Type>HANDICAP_IMMORTAL</Type></Where>
+        </Update>
+        <Update>
+            <Set>
                 <NumCitiesUnhappinessMod>100</NumCitiesUnhappinessMod>      <!--90-->
                 <PopulationUnhappinessMod>100</PopulationUnhappinessMod>    <!--90-->
                 <RouteCostPercent>100</RouteCostPercent>                    <!--50-->
