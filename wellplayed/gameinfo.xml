@@ -97,7 +97,19 @@
 				<Type>WORLDSIZE_HUGE</Type>
 			</Where>
 		</Update>
-	</Worlds>
+        <Update>
+            <Set><MaxActiveReligions>8</MaxActiveReligions></Set>           <!--6-->
+            <Where><Type>WORLDSIZE_LARGE</Type></Where>
+        </Update>
+        <Update>
+            <Set><MaxActiveReligions>6</MaxActiveReligions></Set>           <!--5-->
+            <Where><Type>WORLDSIZE_STANDARD</Type></Where>
+        </Update>
+        <Update>
+            <Set><MaxActiveReligions>6</MaxActiveReligions></Set>           <!--4-->
+            <Where><Type>WORLDSIZE_SMALL</Type></Where>
+        </Update>
+    </Worlds>
 
     <HandicapInfos>
         <Update>

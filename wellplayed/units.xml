@@ -62,7 +62,7 @@
         pictish upgrade is swordsman and and goody upgrade is spearman
     ua: no change
         values for FaithFromUnimprovedForest are hard written in CvCity.cpp
-    ub: +1 happiness
+    ub: no change
     -->
     <Civilization_UnitClassOverrides>
         <Update>
@@ -100,7 +100,7 @@
     </Unit_ClassUpgrades>
     <Buildings>
         <Update>
-            <Set><Happiness>4</Happiness></Set>             <!--3-->
+            <Set><Happiness>3</Happiness></Set>             <!--3-->
             <Where><Type>BUILDING_CEILIDH_HALL</Type></Where>
         </Update>
     </Buildings>
