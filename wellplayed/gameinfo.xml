@@ -121,7 +121,7 @@
                 <AITrainPercent>50</AITrainPercent>                         <!--50-->
                 <AIBuildingCostPercent>100</AIBuildingCostPercent>          <!--50-->
                 <AIUnitCostPercent>100</AIUnitCostPercent>                  <!--50-->
-                <AIWorldConstructPercent>100</AIWorldConstructPercent>      <!--100-->
+                <AIWorldConstructPercent>200</AIWorldConstructPercent>      <!--100-->
             </Set>
             <Where><Type>HANDICAP_DEITY</Type></Where>
         </Update>
@@ -134,7 +134,7 @@
                 <AITrainPercent>65</AITrainPercent>                         <!--65-->
                 <AIBuildingCostPercent>100</AIBuildingCostPercent>          <!--65-->
                 <AIUnitCostPercent>100</AIUnitCostPercent>                  <!--65-->
-                <AIWorldConstructPercent>100</AIWorldConstructPercent>      <!--100-->
+                <AIWorldConstructPercent>200</AIWorldConstructPercent>      <!--100-->
             </Set>
             <Where><Type>HANDICAP_IMMORTAL</Type></Where>
         </Update>

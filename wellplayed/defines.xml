@@ -10,6 +10,31 @@
 				<Name>MIN_CITY_RANGE</Name>
 			</Where>
 		</Update>
-	</Defines>
+        <!--
+        to buy more tiles
+        =================
+        default value is 3, tiles up to the 3rd ring can be purchased
+        set this value to 4 or greater to buy more but the ui code also need to be changed
+        ui looks at each plot around city and adds buy button on it
+        old `for i = 0, pCity:GetNumCityPlots() - 1, 1 do`
+        new `for i = 0, 90, 1 do`
+        # DLC/Expansion2/UI/InGame/CityView/CityView.lua:2138
+        ```
+        for i = 0, pCity:GetNumCityPlots() - 1, 1 do
+        local plot = pCity:GetCityIndexPlot( i );
+        ```
+
+        `GetNumCityPlots` is 37 defined in
+        # CvGameCoreSource/CvGameCoreDLL_Expansion2/CvDefines.h:13
+        37 is the number of tiles of first 3 rings plus the city tile
+        4th ring has 24 tiles   (total 61)
+        5th ring has 30 tiles   (total 91)
+        idx 0 plot is the city tile, idx 1 on 1st ring, 7 on 2nd
+        -->
+    	<Update>
+            <Set><Value>5</Value></Set>     <!--3-->
+            <Where><Name>MAXIMUM_BUY_PLOT_DISTANCE</Name></Where>
+        </Update>
+</Defines>
   
 </GameData>
