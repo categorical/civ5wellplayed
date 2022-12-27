@@ -30,11 +30,17 @@
         4th ring has 24 tiles   (total 61)
         5th ring has 30 tiles   (total 91)
         idx 0 plot is the city tile, idx 1 on 1st ring, 7 on 2nd
+
+        total 331 tiles if set to 10
+        cityview content can be moved using mouse in case tiles do not fit into one screen
         -->
     	<Update>
-            <Set><Value>5</Value></Set>     <!--3-->
+            <Set><Value>10</Value></Set>    <!--3-->
             <Where><Name>MAXIMUM_BUY_PLOT_DISTANCE</Name></Where>
         </Update>
-</Defines>
-  
+        <Update>
+            <Set><Value>10</Value></Set>    <!--5-->
+            <Where><Name>MAXIMUM_ACQUIRE_PLOT_DISTANCE</Name></Where>
+        </Update>
+    </Defines>
 </GameData>
